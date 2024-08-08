@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A66363"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online Quiz"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This will be our question"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:paddingLeft="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="180dp"
+        android:layout_above="@+id/choice_layout"
+       />
+    <LinearLayout
+        android:id="@+id/choice_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Ans A"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Ans B"
+
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Ans C"
+
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FBFBFB"
+            android:text="Ans D"
+
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_layout"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="#F42828"
+        android:text="Submit"
+        android:layout_centerInParent="true"
+
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
